@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple"
+    tools:context=".MainActivity">
+    <!-- If the program isn't sure what something means or
+                   there is a better way of doing something, it
+                   highlights it yellow-->
+<!-- A red squiggly line means there is an error-->
+
+<!-- We do not need to define constraints for relative layout-->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text= "Hello from John!"
+        android:textColor = "@color/black"
+        android:textSize= "40sp"
+       />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Click to change text color"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textSize= "30sp"
+        android:background="#6407a5"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/changeBackgroundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Click to change background color"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize= "25sp"
+        android:background="#6407a5"
+        android:padding="10dp"
+        android:layout_above="@+id/button"
+        />
+    <TextView
+        android:id="@+id/changeTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Click to change text"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize= "30sp"
+        android:background="#6407a5"
+        android:padding="10dp"
+        android:layout_above="@+id/changeBackgroundButton"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/changeTextButton"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Create your own text!" />
+
+    <TextView
+        android:id="@+id/changeCustomTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Click to change custom text"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize= "30sp"
+        android:background="#6407a5"
+        android:padding="10dp"
+        android:layout_above="@+id/editText"
+        />
+
+</RelativeLayout>
